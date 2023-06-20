@@ -6,12 +6,12 @@ import React, { useState } from "react";
 />;
 
 const TodoList = () => {
-  const [counter, setCounter] = useState(23);
+  const [num, setNum] = useState(23);
   let Level = "";
   console.log(Level);
-  if (counter < 10) {
+  if (num < 10) {
     Level = "Low";
-  } else if (counter > 20) {
+  } else if (num > 20) {
     Level = "High";
   } else {
     Level = "Medium";
@@ -25,16 +25,16 @@ const TodoList = () => {
               {" "}
               Level = <span className="blink">{Level}</span>
             </h1>
-            <h2 className="counter">
-              Current Counter <br />
+            <h2 className="num">
+              Counter <br />
               <br />
-              <span className="blink">{counter}</span>
+              <span className="blink">{num}</span>
             </h2>
             <div className="btn-container">
-              <button className="btn" onClick={() => setCounter(counter + 1)}>
+              <button className="btn" onClick={() => setNum(num + 1)}>
                 Increment
               </button>
-              <button className="btn" onClick={() => setCounter(counter - 1)}>
+              <button className="btn" onClick={() => setNum(num - 1)}>
                 Decrement
               </button>
             </div>

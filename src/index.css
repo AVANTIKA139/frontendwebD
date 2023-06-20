@@ -24,10 +24,10 @@ code {
   align-items: center;
 
   .outer-box {
-    width:1430px;
-    height:660px;
-    border:2.5px solid #000;
-     padding:20px; 
+    width:1530px;
+    height:860px;
+    border:5.5px solid #000;
+     padding: 50px; 
      margin:20px; 
      display:flex;
      justify-content: center;
@@ -52,7 +52,7 @@ code {
   background-size: 20px 20px;
   background-color: #28ec63
 }
-.counter {
+.num {
   text-align: center;
   line-height:0.6;
   text-shadow:0 0 80px rgba(0,0,0,0.2);;
@@ -89,20 +89,20 @@ h1 {
 }
 button {
   min-height: 40px;
-  border-radius: 5px;
+  border-radius: 2px;
   border-color: transparent;
   background-color: blue;
   color: antiquewhite;
   font-size: 20px;
-  border: none;
-outline: none;
+  border: cadetblue;
+outline: brown;
 padding: 0 15px;
 margin-top: 30px;
 box-shadow: 5px 5px 15px -5px rgba(red, green, blue, alpha);
 
 }
 button:hover {
-  background-color: #badc58;
+  background-color: #dc58c4;
 
 }
 
