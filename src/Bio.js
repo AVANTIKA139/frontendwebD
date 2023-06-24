@@ -1,23 +1,6 @@
-// import React from "react";
-
-// import Heading from "./Heading";
-// import Para from "./Para";
-// import List from "./List";
-
-// function App() {
-//   return (
-//     <>
-//       <Heading />
-//       <Para />
-//       <List />
-//     </>
-//   );
-// }
-// export default App;
-
 import { useState } from "react";
 
-function App() {
+function Bio() {
   const [bio, setbio] = useState({
     name: "Avantika",
     batch: "2025",
@@ -76,5 +59,4 @@ function App() {
     </>
   );
 }
-
-export default App;
+export default Bio;
