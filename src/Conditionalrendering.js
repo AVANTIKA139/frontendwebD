@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const ConditionalRendering = () => {
+const Conditionalrendering = () => {
   const [isVerified, setisVerified] = useState(false);
   return (
     <>
@@ -13,4 +13,4 @@ const ConditionalRendering = () => {
     </>
   );
 };
-export default ConditionalRendering;
+export default Conditionalrendering;

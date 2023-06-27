@@ -1,19 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-// import App from "./App.js";
-
-// import TodoList from "./TodoList";
-// import Bio from "./Bio.js";
-// import Form from "./Form";
-// import App from "./App.css";
-import ConditionalRendering from "./Conditionalrendering";
-
-// import "./index.css";
+import App from "./App.js";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <>
-    <ConditionalRendering />
+    <App />
   </>
 );
 
