@@ -32,11 +32,14 @@ const Name = () => {
     // val = "Lovely Tiwari";
     // console.log(val);
     let val = myName;
-    if (val === "Avantika Tiwari") {
-      setmyName("Lovely Tiwari");
-    } else {
-      setmyName("Avantika Tiwari");
-    }
+    val === "Avantika Tiwari"
+      ? setmyName("Lovely Tiwari")
+      : setmyName("Avantika Tiwari");
+    // if (val === "Avantika Tiwari") {
+    //   setmyName("Lovely Tiwari");
+    // } else {
+    //   setmyName("Avantika Tiwari");
+    // }
   };
   console.log(myName);
   return (
