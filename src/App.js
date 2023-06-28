@@ -4,7 +4,10 @@ import React from "react";
 // import Para from "./Para";
 // import List from "./List";
 // import Conditionalrendering from "./Conditionalrendering";
-import UseStateArray from "./UseStateArray";
+// import UseStateArray from "./UseStateArray";
+
+// import Counter1 from "./Counter1";
+import Name from "./Name";
 function App() {
   return (
     <>
@@ -12,8 +15,10 @@ function App() {
       <Para />
       <List /> */}
       {/* <Conditionalrendering /> */}
-      <UseStateArray />
+      {/* <UseStateArray /> */}
+      <Name />
     </>
   );
 }
 export default App;
+// rafce(shortcut but not working)
