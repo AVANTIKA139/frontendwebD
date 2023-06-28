@@ -1,0 +1,72 @@
+What react basically does?
+ React works on single page application concept.
+ which means only one index.html is there.
+ Now with the help of React we get control over that one index.html
+ file. Now with the help of javascript logic we modify
+ that one index.html file and hence our app becomes 
+ single page application and hence faster.
+
+What is component?
+components are basically like functions which return html/jsx.
+In index.js file, we return only one component that is called
+the Parent component which App.js. All the other
+subcomponents and logic are done inside App.js
+
+Basic things to be taken care while making a component.
+1. A component file name must start with Capital letter.
+2. A component must return all the html inside a single tag 
+generally <></>
+3.A component function must also be capitalized
+4. In component class is replaced by className.
+5. Each component must have closing tags. If there is no closing tag
+then use self closing tag in that reference.
+e.g. in normal html
+<h1></h>
+<img src="">
+<input type='text' >
+
+but in react
+<h1></h>
+<img src="" />
+<input />
+
+6. Attributes in JSX must be in camelcase convention
+
+Ashutosh Mishra 
+ashutoshMishra
+
+Good Boy
+goodBoy
+
+I am a good boy.
+
+iAmAGoodBoy
+7. CSS/styling are used in similar fashion
+
+8. We cannot directly use javascript after return statement. If we want to use js or implement logic 
+we do it before return.
+9. Whenever we want to use Javascript inside JSX then we can do it inside 
+curly brackets {}
+
+
+Use State
+In a component, if we want to update any value
+using normal variable declartion and logic, then 
+it won't be reflected because a components need to be
+re-rendered in order to reflect the changes.
+So we need to come up with a solution in which
+a component re-render itself on update of any value/state.
+
+
+
+let myname = "ashutosh" // normal coding, 
+myname = "Satyam" ,no re-render hence no change on update
+
+useState => React // React, component re-render
+useState doesn't instantly update the state,
+hance updated state isn't accessible just after setstate
+
+
+Whenever we want to render any tag/element/div/component/jsx according to certain
+conditions, then we use conditional statements (if else but in ternay format) inside jsx.
+This is called conditional rendering
