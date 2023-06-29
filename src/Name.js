@@ -31,6 +31,7 @@ const Name = () => {
   const changeName = () => {
     // val = "Lovely Tiwari";
     // console.log(val);
+    // Ternary opertor for if-else.
     let val = myName;
     val === "Avantika Tiwari"
       ? setmyName("Lovely Tiwari")

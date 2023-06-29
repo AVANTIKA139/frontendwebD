@@ -1,3 +1,10 @@
  Let you use State and other React features without writing class.(Hooks are  a new addition in React16.8)
 Hook is a special function.
 Example: useState is a Hook that lets you add React  state to function components.
+Rules to follow while writing Hooks
+.Always write it inside the component or function
+.Component must be PascalCase(First letter should be uppercase)
+.we can directly import or we can directly write it using React.hookName
+Dont call hooks inside loops, conditions, or nested functions
+Ternary opertors are use instead of if - else for react toggle
+spread opertors({...myObject, (the object we want to change that we want to change)})const [myObject,setmyObject] = useState({})

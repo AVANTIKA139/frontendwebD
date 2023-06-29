@@ -85,6 +85,9 @@
     transform: rotate(360deg);
   }
 }
+div {
+  background: #61dafb;
+}
 
 .center_div{
   width: 25%;

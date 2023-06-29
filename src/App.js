@@ -7,7 +7,10 @@ import React from "react";
 // import UseStateArray from "./UseStateArray";
 
 // import Counter1 from "./Counter1";
-import Name from "./Name";
+// import Name from "./Name";
+// import RulesHook from "./components/RulesHook";
+
+import UseStateObject from "./components/UseStateObject";
 function App() {
   return (
     <>
@@ -16,7 +19,9 @@ function App() {
       <List /> */}
       {/* <Conditionalrendering /> */}
       {/* <UseStateArray /> */}
-      <Name />
+      {/* <Name /> */}
+      {/* <RulesHook /> */}
+      <UseStateObject />
     </>
   );
 }
