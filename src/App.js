@@ -10,7 +10,8 @@ import React from "react";
 // import Name from "./Name";
 // import RulesHook from "./components/RulesHook";
 
-import UseStateObject from "./components/UseStateObject";
+// import UseStateObject from "./components/UseStateObject";
+import Array from "./components/Array";
 function App() {
   return (
     <>
@@ -21,7 +22,7 @@ function App() {
       {/* <UseStateArray /> */}
       {/* <Name /> */}
       {/* <RulesHook /> */}
-      <UseStateObject />
+      <Array />
     </>
   );
 }
