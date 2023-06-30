@@ -7,8 +7,8 @@ const Conditionalrendering = () => {
       <h1>Avantika</h1>
       {isVerified ? <p>Avantika is verified</p> : null}
 
-      <button onClick={() => setisVerified(true)} type="button">
-        verify Avantika
+      <button onClick={() => setisVerified(isVerified)} type="button">
+        {isVerified ? "deverify enthuashu" : "Verify enthuashu"}
       </button>
     </>
   );

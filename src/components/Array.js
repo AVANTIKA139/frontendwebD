@@ -2,39 +2,75 @@ import React, { useState } from "react";
 
 const Array = () => {
   const [toggle, settoggle] = useState(true);
-  const [fruits, setFruits] = useState(["Apple", "Banana", "Guava", "Orange"]);
-  const handleUpdateFruits = () => {
-    if (toggle) setFruits(["Banana", "Grapes", "Orange", "Apple"]);
-    else setFruits(["Apple", "Banana", "Grapes", "Guava"]);
+  const [fruits, setfruits] = useState([
+    "Apple ",
+    "Banana",
+    "Grapes",
+    "Orange",
+  ]);
+  const handleShuffle = () => {
+    if (toggle) {
+      setfruits(["Banana", "Grapes", "Orange", "Apple"]);
+    } else {
+      setfruits(["Apple", "Banana", "Grapes", "Orange"]);
+    }
     settoggle(!toggle);
   };
+  const handleEmptyFruit = () => {
+    setfruits([]);
+  };
+  const handleFillFruits = () => {
+    setfruits(["Apple", "Banana", "Grapes", "Orange"]);
+  };
+  const handleAddFruit = () => {
+    let oldFruits = [...fruits];
+    oldFruits.push("Mango");
+    oldFruits.push("Pineapple");
+    setfruits(oldFruits);
+  };
+  const handleRemoveFruit = () => {
+    let oldFruits = [...fruits];
+    oldFruits.pop();
+    oldFruits.pop();
+    setfruits(oldFruits);
+  };
+  const handleDiscardApple = () => {
+    setfruits((oldValues) => {
+      return oldValues.filter((fruits) => fruits !== Apple);
+    });
+  };
+
   return (
     <>
-      <p>this is list of fruits</p>
+      <p>This is the list of fruits</p>
       <ul>
-        <li>{fruits[0]}</li>
+        <li>{fruits[0]} </li>
         <li>{fruits[1]}</li>
         <li>{fruits[2]}</li>
         <li>{fruits[3]}</li>
-        <li>fruits{[4]}</li>
-        <li>fruits{[5]}</li>
+        <li>{fruits[4]}</li>
+        <li>{fruits[5]}</li>
       </ul>
-      CTA = Call to action
-      {/* {/* <button onClick={() => handleUpdateFruits()} type="button"></button> */}
-      <button type="button" onClick={() => handleShuffleFruits()}></button>
-      <button type="button" onClick={() => handleEmptyFruits()}>
+      <button onClick={() => handleShuffle()} type="button">
+        Shuffle Fruits
+      </button>
+      <button onClick={() => handleEmptyFruit()} type="button">
         Empty Fruits
       </button>
-      <button type="button" onClick={() => handleFillFruits()}>
-        Fill Fruits
+      <button onClick={() => handleFillFruits()} type="button">
+        Fill fruits
       </button>
-      <button type="button" onClick={() => handleAddFruits()}>
+      <button onClick={() => handleAddFruit()} type="button">
         Add Fruits
       </button>
-      <button type="button" onClick={() => handleRemoveFruits()}>
-        Remove Fruits
-      </button>{" "}
-      */}
+      <button onClick={() => handleRemoveFruit()} type="button">
+        {" "}
+        Remove Fruit{" "}
+      </button>
+      <button onClick={() => handleDiscardApple(fruits)} type="button">
+        {" "}
+        DiscardApple{" "}
+      </button>
     </>
   );
 };
