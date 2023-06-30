@@ -2,9 +2,9 @@ import React, { useState } from "react";
 
 const UseStateObject = () => {
   const [myObject, setmyObject] = useState({
-    myName: "Avantika",
-    myAge: 20,
-    myDegree: "B.tech",
+    Name: "Avantika",
+    Batch: 20,
+    Package: "B.tech",
   });
   const changeObject = () => {
     setmyObject({ ...myObject, myName: "dwifof" });
