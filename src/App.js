@@ -12,7 +12,8 @@ import React from "react";
 
 // import UseStateObject from "./components/UseStateObject";
 // import Array from "./components/Array";
-import ArrayOfObject from "./components/ArrayOfObject";
+// import ArrayOfObject from "./components/ArrayOfObject";
+import UseStateObject from "./components/UseStateObject";
 
 function App() {
   return (
@@ -24,7 +25,7 @@ function App() {
       {/* <UseStateArray /> */}
       {/* <Name /> */}
       {/* <RulesHook /> */}
-      <ArrayOfObject />
+      <UseStateObject />
     </>
   );
 }

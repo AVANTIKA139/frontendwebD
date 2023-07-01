@@ -17,13 +17,13 @@ const ArrayPractise = () => {
     }
     settoggle(!toggle);
   };
-  const handleEmptyCities = () => {
-    setcities([]);
-  };
+  // const handleEmptyCities = () => {
+  //   setcities([]);
+  // };
 
-  const handleFillCities = () => {
-    setcities(["Varanasi", "Delhi", "Mumbai", "Kolkata", "Jaipur"]);
-  };
+  // const handleFillCities = () => {
+  //   setcities(["Varanasi", "Delhi", "Mumbai", "Kolkata", "Jaipur"]);
+  // };
 
   const handleAddCities = () => {
     let oldcities = [...cities];
@@ -42,21 +42,28 @@ const ArrayPractise = () => {
     <>
       <p>this is the list of Cities</p>
       <ol>
-        <li>{cities[0]}</li>
+        {/* <li>{cities[0]}</li>
         <li>{cities[1]}</li>
         <li>{cities[2]}</li>
         <li>{cities[3]}</li>
-        <li>{cities[4]}</li>
+        <li>{cities[4]}</li> */}
+        {cities.map((v) => {
+          return (
+            <>
+              <li>{v}</li>
+            </>
+          );
+        })}
       </ol>
       <button onClick={() => handleShuffleCities()} type="button">
         Shuffle Cities{" "}
       </button>
-      <button onClick={() => handleEmptyCities()} type="button">
+      {/* <button onClick={() => handleEmptyCities()} type="button">
         Empty Cities{" "}
       </button>
       <button onClick={() => handleFillCities()} type="button">
-        Fill Cities{" "}
-      </button>
+        Fill Cities{" "} */}
+
       <button onClick={() => handleAddCities()} type="button">
         Add Cities{" "}
       </button>
