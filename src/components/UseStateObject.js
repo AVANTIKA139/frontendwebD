@@ -47,14 +47,23 @@ const UseStateObject = () => {
 
   return (
     <>
-      <p style={{ color: "Black", backgroundColor: "blue", fontSize: "50" }}>
+      <p
+        style={{
+          color: "Black",
+          backgroundColor: "green",
+          fontSize: "120",
+          boxShadow: "-moz-initial",
+        }}
+      >
         List of candidates{" "}
       </p>
       <ol>
         {myCandidates.map((v) => {
           return (
             <>
-              <li>Name: {v.myName} </li>
+              <li style={{ backgroundColor: "ButtonFace" }}>
+                Name: {v.myName}{" "}
+              </li>
               <br></br>
               <li>Batch:{v.myAge}</li>
               <br></br>
