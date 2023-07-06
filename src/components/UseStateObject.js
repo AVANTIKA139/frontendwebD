@@ -32,17 +32,30 @@ const UseStateObject = () => {
 
   const AddCandidates = () => {
     let previousCandidates = [...myCandidates];
-    previousCandidates.push(
-      { myName: "Pratyush", myAge: 30, myDegree: "M.tech" },
-      { myName: "Sonam", myAge: 28, myDegree: "CA" }
-    );
+    previousCandidates.push({
+      myName: "Pratyush",
+      myAge: 30,
+      myDegree: "M.tech",
+    });
     setmyCandidates(previousCandidates);
   };
+  const DeleteCandidate1 = () => {
+    let oldCandidates = [...myCandidates];
+    let newCandidates = oldCandidates.filter((v, i) => v.myName !== "Pratichi");
+    setmyCandidates(newCandidates);
+  };
 
-  const RemoveCandidates = () => {
-    let previousCandidates = [...myCandidates];
-    previousCandidates.pop();
-    setmyCandidates(previousCandidates);
+  const DeleteCandidate2 = () => {
+    let oldCandidates = [...myCandidates];
+    let newCandidates = oldCandidates.filter((v, i) => v.myName !== "Lovely");
+    setmyCandidates(newCandidates);
+  };
+  const DeleteCurrentCandidates = (selectedCandidate) => {
+    let oldCandidates = [...myCandidates];
+    let newCandidates = oldCandidates.filter(
+      (v, i) => v.myName !== selectedCandidate.myName
+    );
+    setmyCandidates(newCandidates);
   };
 
   return (
@@ -68,6 +81,9 @@ const UseStateObject = () => {
               <li>Batch:{v.myAge}</li>
               <br></br>
               <li>Degree:{v.myDegree}</li>
+              <button onClick={() => DeleteCurrentCandidates(v)} type="btn">
+                Deletemyinformation
+              </button>
               <br></br>
             </>
           );
@@ -83,10 +99,19 @@ const UseStateObject = () => {
       </button>
       <button
         style={{ backgroundColor: "pink", color: "black" }}
-        onClick={() => RemoveCandidates()}
+        onClick={() => DeleteCandidate1()}
         type="btn"
       >
-        RemoveCandidates
+        {" "}
+        Delete Pratichi
+      </button>
+      <button
+        style={{ backgroundColor: "pink", color: "black" }}
+        onClick={() => DeleteCandidate2()}
+        type="btn"
+      >
+        {" "}
+        Delete Lovely
       </button>
     </>
   );

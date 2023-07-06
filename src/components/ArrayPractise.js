@@ -37,6 +37,21 @@ const ArrayPractise = () => {
     oldcities.pop();
     setcities(oldcities);
   };
+  const Deletecity1 = () => {
+    let oldcities = [...cities];
+    let newcities = oldcities.filter((v) => v !== "Mumbai");
+    setcities(newcities);
+  };
+  const Deletecity2 = () => {
+    let oldcities = [...cities];
+    let newcities = oldcities.filter((v) => v !== "Delhi");
+    setcities(newcities);
+  };
+  const DeleteCurrentcities = (selectedcity) => {
+    let oldcities = [...cities];
+    let newcities = oldcities.filter((v) => v !== selectedcity);
+    setcities(newcities);
+  };
 
   return (
     <>
@@ -51,6 +66,9 @@ const ArrayPractise = () => {
           return (
             <>
               <li>{v}</li>
+              <button onClick={() => DeleteCurrentcities(v)} type="button">
+                Deletethiscity{" "}
+              </button>
             </>
           );
         })}
@@ -69,6 +87,12 @@ const ArrayPractise = () => {
       </button>
       <button onClick={() => handleRemovecities()} type="button">
         Remove Cities{" "}
+      </button>
+      <button onClick={() => Deletecity1()} type="button">
+        Delete Mumbai{" "}
+      </button>
+      <button onClick={() => Deletecity2()} type="button">
+        Delete Delhi{" "}
       </button>
     </>
   );
