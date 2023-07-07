@@ -14,7 +14,8 @@ import React from "react";
 // import Array from "./components/Array";
 // import ArrayOfObject from "./components/ArrayOfObject";
 // import UseStateObject from "./components/UseStateObject";
-import ArrayPractise from "./components/ArrayPractise";
+import TaskManagement from "./components/TaskManagement";
+// import ArrayPractise from "./components/ArrayPractise";
 
 function App() {
   return (
@@ -27,7 +28,8 @@ function App() {
       {/* <Name /> */}
       {/* <RulesHook /> */}
       {/* <UseStateObject /> */}
-      <ArrayPractise />
+      {/* <ArrayPractise /> */}
+      <TaskManagement />
     </>
   );
 }

@@ -57,6 +57,7 @@ const UseStateObject = () => {
     );
     setmyCandidates(newCandidates);
   };
+  const ChangeObject = () => {};
 
   return (
     <>
@@ -112,6 +113,9 @@ const UseStateObject = () => {
       >
         {" "}
         Delete Lovely
+      </button>
+      <button onClick={() => ChangeObject()} type="button">
+        UpdateName{" "}
       </button>
     </>
   );
